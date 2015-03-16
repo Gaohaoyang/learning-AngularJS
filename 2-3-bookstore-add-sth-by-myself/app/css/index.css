@@ -1,0 +1,243 @@
+.page {
+    bottom:0;
+    padding-top:200px;
+    position:absolute;
+    text-align:center;
+    top:0;
+    width:100%;
+}
+.page h1 {
+    font-size:60px;
+}
+.page a {
+    margin-top:50px;
+}
+.hello {
+    background:#00D0BC;
+    color:#FFFFFF;
+}
+.list{
+    background:#E59400;
+    color:#FFFFFF;
+}
+.ghy{
+    background: #3F6161;
+    color: #FFFFFF;
+}
+.ghy a{
+    margin-top: 50px;
+}
+/* Chrome, Opera下使用：*/
+@-webkit-keyframes rotateFall {
+    0% {
+        -webkit-transform: rotateZ(0deg);
+    }
+    20% {
+        -webkit-transform: rotateZ(10deg);
+        -webkit-animation-timing-function: ease-out;
+    }
+    40% {
+        -webkit-transform: rotateZ(17deg);
+    }
+    60% {
+        -webkit-transform: rotateZ(16deg);
+    }
+    100% {
+        -webkit-transform: translateY(100%) rotateZ(17deg);
+    }
+}
+@-webkit-keyframes slideOutLeft {
+    to {
+        -webkit-transform: translateX(-100%);
+    }
+}
+@-webkit-keyframes rotateOutNewspaper {
+    to {
+        -webkit-transform: translateZ(-3000px) rotateZ(360deg);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes scaleUp {
+    from {
+        opacity: 0.3;
+        -webkit-transform: scale(0.8);
+    }
+}
+@-webkit-keyframes slideInRight {
+    from {
+        -webkit-transform:translateX(100%);
+    }
+    to {
+        -webkit-transform: translateX(0);
+    }
+}
+@-webkit-keyframes slideInUp {
+    from {
+        -webkit-transform:translateY(100%);
+    }
+    to {
+        -webkit-transform: translateY(0);
+    }
+}
+@-webkit-keyframes slideOutUp {
+    to{
+        -webkit-transform: translateY(-100%);
+    }
+}
+/* FF下使用 */
+@-moz-keyframes rotateFall {
+    0% {
+        -moz-transform: rotateZ(0deg);
+    }
+    20% {
+        -moz-transform: rotateZ(10deg);
+        -moz-animation-timing-function: ease-out;
+    }
+    40% {
+        -moz-transform: rotateZ(17deg);
+    }
+    60% {
+        -moz-transform: rotateZ(16deg);
+    }
+    100% {
+        -moz-transform: translateY(100%) rotateZ(17deg);
+    }
+}
+@-moz-keyframes slideOutLeft {
+    to {
+        -moz-transform: translateX(-100%);
+    }
+}
+@-moz-keyframes rotateOutNewspaper {
+    to {
+        -moz-transform: translateZ(-3000px) rotateZ(360deg);
+        opacity: 0;
+    }
+}
+@-moz-keyframes scaleUp {
+    from {
+        opacity: 0.3;
+        -moz-transform: scale(0.8);
+    }
+}
+@-moz-keyframes slideInRight {
+    from {
+        -moz-transform:translateX(100%);
+    }
+    to {
+        -moz-transform: translateX(0);
+    }
+}
+@-moz-keyframes slideInUp {
+    from {
+        -moz-transform:translateY(100%);
+    }
+    to {
+        -moz-transform: translateY(0);
+    }
+}
+@-moz-keyframes slideOutUp {
+    to{
+        -moz-transform: translateY(-100%);
+    }
+}
+
+/* IE9以下无法使用，不支持css3动画效果 */
+
+/* 通用识别码IE10以上使用 */
+@keyframes rotateFall {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    20% {
+        transform: rotateZ(10deg);
+        animation-timing-function: ease-out;
+    }
+    40% {
+        transform: rotateZ(17deg);
+    }
+    60% {
+        transform: rotateZ(16deg);
+    }
+    100% {
+        transform: translateY(100%) rotateZ(17deg);
+    }
+}
+@keyframes slideOutLeft {
+    to {
+        transform: translateX(-100%);
+    }
+}
+@keyframes rotateOutNewspaper {
+    to {
+        transform: translateZ(-3000px) rotateZ(360deg);
+        opacity: 0;
+    }
+}
+@keyframes scaleUp {
+    from {
+        opacity: 0.3;
+        transform: scale(0.8);
+    }
+}
+@keyframes slideInRight {
+    from {
+        transform:translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slideInUp {
+    from {
+        transform:translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes slideOutUp {
+    to{
+        transform: translateY(-100%);
+    }
+}
+
+.ng-enter {
+    z-index: 8888;
+}
+.ng-leave {
+    z-index: 9999;
+}
+.hello.ng-enter {
+    -webkit-animation: scaleUp 0.5s both ease-in;
+    -moz-animation: scaleUp 0.5s both ease-in;
+    animation: scaleUp 0.5s both ease-in;
+}
+.hello.ng-leave {
+    -webkit-transform-origin: 0% 0%;
+    -webkit-animation: rotateFall 1s both ease-in;
+    -moz-transform-origin: 0% 0%;
+    -moz-animation: rotateFall 1s both ease-in;
+    transform-origin: 0% 0%;
+    animation: rotateFall 1s both ease-in;
+}
+.list.ng-enter {
+    -webkit-animation:slideInRight 0.5s both ease-in;
+    -moz-animation:slideInRight 0.5s both ease-in;
+    animation:slideInRight 0.5s both ease-in;
+}
+.list.ng-leave {
+    -webkit-animation:slideOutLeft 0.5s both ease-in;
+    -moz-animation:slideOutLeft 0.5s both ease-in;
+    animation:slideOutLeft 0.5s both ease-in;
+}
+.ghy.ng-enter {
+   -webkit-animation:slideInUp 1s both ease-in;
+   -moz-animation:slideInUp 1s both ease-in;
+   animation:slideInUp 1s both ease-in;
+}
+.ghy.ng-leave {
+    -webkit-animation:slideOutUp 0.5s both ease-in;
+    -moz-animation:slideOutUp 0.5s both ease-in;
+    animation:slideOutUp 0.5s both ease-in;
+}
