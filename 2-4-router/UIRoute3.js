@@ -24,7 +24,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
                     controller: function($scope, $state) {
                         $scope.addUserType = function() {
                             $state.go("index.usermng.addusertype");
-                        }
+                        };
                     }
                 }
             }
@@ -47,7 +47,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             controller: function($scope, $state) {
                 $scope.backToPrevious = function() {
                     window.history.back();
-                }
+                };
             }
         })
         .state('index.permission', {
@@ -74,4 +74,20 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
                 }
             }
         })
+        .state('index.aboutme', {
+            url: '/aboutme',
+            views: {
+                'main@index': {
+                    templateUrl:'tpls3/aboutme.html'
+                }
+            }
+        })
+        .state('index.aboutme.info', {
+            url:'/info',
+           /* views: {
+
+            }*/
+            //有多个ng-view才用views, 页面上只有一个view可以直接写templateUrl???
+            templateUrl:'tpls3/info.html'
+        });
 });

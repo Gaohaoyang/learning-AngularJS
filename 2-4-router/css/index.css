@@ -1,1 +1,5 @@
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.navbar-right{
+	margin-right: 5px
+}
