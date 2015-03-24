@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="scopeAndTest">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/angular.js/1.3.0-beta.8/angular.min.js"></script>
+		<script type="text/javascript" src="scopeAndTest.js"></script>
+	</head>
+	<body>
+		<div ng-controller="MyCtrl">
+			<greeting greet="sayHello(name)"></greeting>
+			<greeting greet="sayHello(name)"></greeting>
+			<greeting greet="sayHello(name)"></greeting>
+		</div>
+	</body>
+</html>
