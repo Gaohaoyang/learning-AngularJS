@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Angular HTTP</title>
+    </head>
+    <body ng-app="httpApp" ng-controller="followers">
+        <img ng-repeat="person in followers" src="{{person.avatar_url}}" alt="" />
+        <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+        <script src="index.js" charset="utf-8"></script>
+    </body>
+</html>
