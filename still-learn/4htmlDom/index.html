@@ -7,8 +7,27 @@
         <title>HTML dom</title>
     </head>
     <body ng-app="htmlApp">
-        <div controller="myCtrl">
-            
+        <div ng-controller="myCtrl">
+            <p>
+                <button type="button" name="button" ng-disabled="mySwitch">button</button>
+            </p>
+            <p>
+                <input type="checkbox" name="name" ng-model="mySwitch">
+            </p>
+            <p>
+                mySwitch ---> {{mySwitch}}
+            </p>
+        </div>
+        <div>
+            <div class="" ng-show="true">
+                visible
+            </div>
+            <div class="" ng-show="false">
+                invisible
+            </div>
+            <div class="" ng-hide="false">
+                visible2
+            </div>
         </div>
         <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
         <script src="index.js" charset="utf-8"></script>
