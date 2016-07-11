@@ -1,0 +1,28 @@
+{
+  "name": "learn-angular",
+  "version": "1.0.0",
+  "description": "由于业务需要，我又开始学习 AngularJS 了。唉，感觉要过时的东西……没办法，先学学看吧。",
+  "main": "index.js",
+  "dependencies": {
+      "express": "4.x"
+  },
+  "devDependencies": {
+      "express": "4.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gaohaoyang/learning-AngularJS.git"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "author": "chuanshi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gaohaoyang/learning-AngularJS/issues"
+  },
+  "homepage": "https://github.com/Gaohaoyang/learning-AngularJS#readme"
+}
