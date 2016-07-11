@@ -8,7 +8,14 @@
 </head>
 <body ng-app="eventsApp">
     <div class="" ng-controller="myCtrl">
-
+        <button type="button" name="button" ng-click="c = c+1">+1</button>
+        <p>
+            {{c}}
+        </p>
+        <button type="button" name="button" ng-click="toggle()">toggle ng-hide</button>
+        <div class="" ng-hide="visible">
+            <h1>vvvvv</h1>
+        </div>
     </div>
     <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
     <script src="index.js" charset="utf-8"></script>
